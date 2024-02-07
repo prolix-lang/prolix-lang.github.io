@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Document title -->
+    <title>Prolix Packaging - Packaging Flow</title>
+
+    <!-- SEO (optional) -->
+    <meta
+      name="description"
+      content="The official documentation of the Prolix Programming Language"
+    />
+    <meta name="author" content="_morlus" />
+    <meta name="robots" content="index, follow" />
+    <!-- noindex, nofollow -->
+    <!-- Open Graph: https://ogp.me/ (optional) -->
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Prolix" />
+    <meta
+      property="og:description"
+      content="The official documentation of the Prolix Programming Language"
+    />
+    <meta property="og:url" content="https://prolix.github.io" />
+    <!-- * Note: Replace with your URL. -->
+    <meta property="og:site_name" content="Prolix" />
+    <meta property="og:image" content="../assets/img/prolix2.1logo.png" />
+    <!-- * Note: Replace with your URL. -->
+    <meta property="og:image:width" content="1000" />
+    <meta property="og:image:height" content="1000" />
+    <!-- Twitter cards: https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started (optional) -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Prolix" />
+    <meta
+      name="twitter:description"
+      content="The official documentation of the Prolix Programming Language"
+    />
+    <meta name="twitter:site" content="https://prolix.github.io" />
+    <!-- * Note: Replace with your URL. -->
+    <meta name="twitter:image" content="../assets/img/prolix2.1logo.png" />
+    <!-- * Note: Replace with your URL. -->
+    <meta name="twitter:creator" content="@_morlus" />
+    <!-- * Note: Add your username (@YourUsername) -->
+
+    <!-- Website icons (optional) -->
+    <link rel="icon" href="../assets/img/prolix2.1logo.png" sizes="32x32" />
+    <link rel="icon" href="../assets/img/prolix2.1logo.png" sizes="192x192" />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="../assets/img/prolix2.1logo.png"
+    />
+    <meta
+      name="msapplication-TileImage"
+      content="../assets/img/prolix2.1logo.png"
+    />
+
+    <!-- Google fonts ( https://fonts.google.com/specimen/Open+Sans ) -->
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Open Sans: 300, 300 Italic, 400, 400 Italic, 600, 600 Italic, 700, 700 Italic; CSS: "font-family: 'Open Sans', sans-serif;" -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS files -->
+    <link href="../assets/css/bootstrap.min.css?ver=3.4.1" rel="stylesheet" />
+    <link
+      href="../assets/css/bootstrap-theme.min.css?ver=3.4.1"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/css/ie10-viewport-bug-workaround.css?ver=3.4.1"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/css/font-awesome.min.css?ver=4.7.0"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/plugins/prettyPhoto/css/prettyPhoto.css?ver=3.1.6"
+      rel="stylesheet"
+    />
+    <link href="../assets/css/prism.css?ver=1.29.0" rel="stylesheet" />
+    <link href="../assets/css/documentation.css?ver=1.0.0" rel="stylesheet" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.min.js?ver=3.7.3"></script>
+      <script src="../assets/js/respond.min.js?ver=1.4.2"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <!-- header -->
+    <header id="docs-header">
+      <div class="container">
+        <div id="top" class="docs-header-container">
+          <!-- * The #top identifier (id="top") is used for the "Back to top" link -->
+
+          <!-- top nav -->
+          <nav class="docs-header-nav hidden-sm hidden-xs">
+            <ul class="docs-header-navigation list-unstyled">
+              <!-- template name -->
+              <li class="template-name">
+                <a href="../index.html" title="Home">Prolix</a>
+              </li>
+              <!-- end: template name -->
+              <!-- support -->
+              <li>
+                <a href="../download.html" title="Download">Download</a>
+              </li>
+              <li>
+                <a href="../license.html" title="License">License</a>
+              </li>
+              <!-- end: support -->
+              <!-- my site -->
+              <li>
+                <a
+                  href="https://discord.gg/XRZW7ZrkR7"
+                  target="_blank"
+                  title="Community"
+                  >Community</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://esolangs.org/wiki/Prolix"
+                  target="_blank"
+                  title="Wiki"
+                  >Wiki</a
+                >
+              </li>
+              <!-- end: my site -->
+              <!-- ... * you can add more social icons here; link to icons: https://fontawesome.com/v4.7.0/icons/#brand -->
+            </ul>
+          </nav>
+          <!-- end: top nav -->
+
+          <!-- responsive nav: collapse button and template name -->
+          <!-- * this section appears only on small screens (window width less than 992 pixels) -->
+          <div class="navbar-header">
+            <button
+              type="button"
+              class="navbar-toggle responsive-nav-collapse-btn"
+              data-toggle="collapse"
+              data-target="#responsive-nav-collapse"
+            >
+              <!-- * data-target = mobile navigation id -->
+              <i class="fa fa-bars"></i>
+            </button>
+            <a href="#template-url" class="navbar-brand hidden-md hidden-lg"
+              >Prolix</a
+            ><!-- * template name here -->
+          </div>
+          <!-- end: responsive nav: collapse button and template name -->
+
+          <!-- responsive nav -->
+          <!-- * this navigation appears only on small screens (window width less than 992 pixels) -->
+          <!-- * this navigation is designed for mobile devices (mobile navigation) -->
+          <div id="responsive-nav-collapse" class="collapse navbar-collapse">
+            <nav>
+              <ul class="responsive-nav list-unstyled hidden-md hidden-lg">
+                <li class="template-name">
+                  <a href="../index.html" title="Home">Prolix</a>
+                </li>
+                <!-- end: template name -->
+                <!-- support -->
+                <li>
+                  <a href="../download.html" title="Download">Download</a>
+                </li>
+                <li>
+                  <a href="../license.html" title="License">License</a>
+                </li>
+                <!-- end: support -->
+                <!-- my site -->
+                <li>
+                  <a
+                    href="https://discord.gg/XRZW7ZrkR7"
+                    target="_blank"
+                    title="Community"
+                    >Community</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://esolangs.org/wiki/Prolix"
+                    target="_blank"
+                    title="Wiki"
+                    >Wiki</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- end: responsive nav -->
+        </div>
+      </div>
+    </header>
+    <!-- end: header -->
+
+    <!-- documentation heading -->
+    <br />
+    <!-- end: documentation heading -->
+
+    <!-- content -->
+    <section id="docs-content-section">
+      <div class="container">
+        <div class="docs-content-container">
+          <div class="row">
+            <!-- sidebar nav -->
+
+            <!-- end: sidebar nav -->
+
+            <!-- documentation content -->
+            <div class="col-md-12" role="main">
+              <div class="content">
+                <h3>1. Project Initialization</h3>
+                <p>
+                  The packaging process in Prolix begins with project
+                  initialization. This involves setting up the necessary files
+                  and directories for the project. Consider the target audience
+                  and runtime environment during this phase.
+                </p>
+
+                <h3>2. Audience and Environment Analysis</h3>
+                <p>
+                  Understand the intended audience and the environment in which
+                  the Prolix project will run. Consider factors such as user
+                  expertise, platform compatibility, and potential deployment
+                  scenarios.
+                </p>
+
+                <h3>3. Code Structuring</h3>
+                <p>
+                  Before diving into the code, structure your Prolix project.
+                  Divide the code into modular components, making it more
+                  manageable and readable. Proper structuring is crucial for
+                  easy debugging and maintenance.
+                </p>
+
+                <h3>4. Integration of External Libraries</h3>
+                <p>
+                  If your Prolix project requires external libraries or modules,
+                  integrate them carefully. Ensure compatibility and consider
+                  any dependencies that may impact the packaging process.
+                </p>
+
+                <h3>5. Packaging Decision Tree</h3>
+                <p>
+                  Create a packaging decision tree specific to your Prolix
+                  project. This decision tree should guide you through the
+                  various packaging options based on the project's
+                  characteristics, such as complexity, size, and target
+                  audience.
+                </p>
+
+                <h3>6. Local Execution Packaging Technology</h3>
+                <p>
+                  In Prolix, the primary packaging technology is designed for
+                  local execution. This involves bundling the Prolix code,
+                  interpreter, and any necessary dependencies into a package
+                  that can be executed on a local machine.
+                </p>
+
+                <h3>7. Consideration for Distribution</h3>
+                <p>
+                  If your Prolix project is intended for distribution, consider
+                  packaging options that facilitate easy distribution to
+                  end-users. This may involve creating standalone executables,
+                  installers, or packaging for specific platforms.
+                </p>
+
+                <h3>8. Documentation and Readme Files</h3>
+                <p>
+                  Include comprehensive documentation and readme files in your
+                  Prolix project. Clearly explain the installation process,
+                  usage instructions, and any additional information that users
+                  or developers may need.
+                </p>
+
+                <h3>9. Testing and Debugging</h3>
+                <p>
+                  Before finalizing the packaging, extensively test the packaged
+                  Prolix project. Identify and fix any issues related to
+                  packaging, ensuring a smooth and error-free experience for
+                  end-users.
+                </p>
+
+                <h3>10. Versioning and Release</h3>
+                <p>
+                  Implement versioning for your Prolix project. Clearly mark
+                  releases, and provide release notes highlighting any changes
+                  or improvements. This helps users understand the evolution of
+                  the project.
+                </p>
+
+                <h3>11. Continuous Integration (Optional)</h3>
+                <p>
+                  For larger Prolix projects, consider implementing continuous
+                  integration to automate the packaging and testing process.
+                  This ensures consistent and reliable packaging across
+                  different environments.
+                </p>
+
+                <h3>12. User Feedback and Iteration</h3>
+                <p>
+                  After releasing the packaged Prolix project, gather user
+                  feedback. Use this feedback to iterate on the packaging
+                  process, addressing any issues and improving the overall user
+                  experience.
+                </p>
+
+                <h3>13. Documentation Update</h3>
+                <p>
+                  Keep the documentation up-to-date with any changes made to the
+                  packaging process. This helps both users and developers
+                  understand the packaging requirements for each release.
+                </p>
+
+                <h3>14. Future Considerations</h3>
+                <p>
+                  Anticipate future changes and developments in Prolix. Stay
+                  informed about updates, new features, and best practices in
+                  packaging to adapt your process accordingly.
+                </p>
+
+                <h3>15. Conclusion</h3>
+                <p>
+                  The packaging flow in Prolix is a dynamic and iterative
+                  process. By carefully considering the audience, environment,
+                  and project characteristics, you can create well-packaged
+                  Prolix projects that are user-friendly and reliable.
+                </p>
+
+                <h3>Upload to the PPM (Prolix Package Manager)</h3>
+                <pre>ppm upload /path/to/spec.prlx</pre>
+                <h3>Download and install</h3>
+                <p>
+                  Now that the package is published, end users can download and
+                  install the package into their Prolix environment. Typically
+                  this is done with <code>ppm</code>, using a command like:
+                </p>
+                <pre>ppm install package_name</pre>
+              </div>
+              <!-- /.content -->
+            </div>
+            <!-- end: documentation content -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end: content -->
+
+    <!-- footer -->
+    <footer id="docs-footer">
+      <div class="container">
+        <div class="docs-footer-container">
+          <p>
+            Copyright<i class="fa fa-copyright"></i>2023 - 2024. Prolix Official
+            Site | Author:
+            <a
+              href="https://esolangs.org/wiki/User:Morlus"
+              target="_blank"
+              rel="noopener noreferrer"
+              >_morlus</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- end: footer -->
+
+    <!-- JS files
+================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../assets/js/jquery.min.js?ver=1.12.4"></script>
+    <script src="../assets/js/bootstrap.min.js?ver=3.4.1"></script>
+    <script src="../assets/js/ie10-viewport-bug-workaround.js?ver=3.4.1"></script>
+    <script src="../assets/plugins/prettyPhoto/js/jquery.prettyPhoto.js?ver=3.1.6"></script>
+    <script src="../assets/js/prism.js?ver=1.29.0"></script>
+    <script src="../assets/js/documentation.js?ver=1.0.0"></script>
+  </body>
+</html>

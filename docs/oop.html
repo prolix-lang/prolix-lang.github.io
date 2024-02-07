@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Document title -->
+    <title>Prolix - Object-Oriented Programming</title>
+
+    <!-- SEO (optional) -->
+    <meta
+      name="description"
+      content="The official documentation of the Prolix Programming Language"
+    />
+    <meta name="author" content="_morlus" />
+    <meta name="robots" content="index, follow" />
+    <!-- noindex, nofollow -->
+    <!-- Open Graph: https://ogp.me/ (optional) -->
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Prolix" />
+    <meta
+      property="og:description"
+      content="The official documentation of the Prolix Programming Language"
+    />
+    <meta property="og:url" content="https://prolix.github.io" />
+    <!-- * Note: Replace with your URL. -->
+    <meta property="og:site_name" content="Prolix" />
+    <meta property="og:image" content="../assets/img/prolix2.1logo.png" />
+    <!-- * Note: Replace with your URL. -->
+    <meta property="og:image:width" content="1000" />
+    <meta property="og:image:height" content="1000" />
+    <!-- Twitter cards: https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started (optional) -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Prolix" />
+    <meta
+      name="twitter:description"
+      content="The official documentation of the Prolix Programming Language"
+    />
+    <meta name="twitter:site" content="https://prolix.github.io" />
+    <!-- * Note: Replace with your URL. -->
+    <meta name="twitter:image" content="../assets/img/prolix2.1logo.png" />
+    <!-- * Note: Replace with your URL. -->
+    <meta name="twitter:creator" content="@_morlus" />
+    <!-- * Note: Add your username (@YourUsername) -->
+
+    <!-- Website icons (optional) -->
+    <link rel="icon" href="../assets/img/prolix2.1logo.png" sizes="32x32" />
+    <link rel="icon" href="../assets/img/prolix2.1logo.png" sizes="192x192" />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="../assets/img/prolix2.1logo.png"
+    />
+    <meta
+      name="msapplication-TileImage"
+      content="../assets/img/prolix2.1logo.png"
+    />
+
+    <!-- Google fonts ( https://fonts.google.com/specimen/Open+Sans ) -->
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Open Sans: 300, 300 Italic, 400, 400 Italic, 600, 600 Italic, 700, 700 Italic; CSS: "font-family: 'Open Sans', sans-serif;" -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS files -->
+    <link href="../assets/css/bootstrap.min.css?ver=3.4.1" rel="stylesheet" />
+    <link
+      href="../assets/css/bootstrap-theme.min.css?ver=3.4.1"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/css/ie10-viewport-bug-workaround.css?ver=3.4.1"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/css/font-awesome.min.css?ver=4.7.0"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/plugins/prettyPhoto/css/prettyPhoto.css?ver=3.1.6"
+      rel="stylesheet"
+    />
+    <link href="../assets/css/prism.css?ver=1.29.0" rel="stylesheet" />
+    <link href="../assets/css/documentation.css?ver=1.0.0" rel="stylesheet" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.min.js?ver=3.7.3"></script>
+      <script src="../assets/js/respond.min.js?ver=1.4.2"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <!-- header -->
+    <header id="docs-header">
+      <div class="container">
+        <div id="top" class="docs-header-container">
+          <!-- * The #top identifier (id="top") is used for the "Back to top" link -->
+
+          <!-- top nav -->
+          <nav class="docs-header-nav hidden-sm hidden-xs">
+            <ul class="docs-header-navigation list-unstyled">
+              <!-- template name -->
+              <li class="template-name">
+                <a href="../index.html" title="Home">Prolix</a>
+              </li>
+              <!-- end: template name -->
+              <!-- support -->
+              <li>
+                <a href="../download.html" title="Download">Download</a>
+              </li>
+              <li>
+                <a href="../license.html" title="License">License</a>
+              </li>
+              <!-- end: support -->
+              <!-- my site -->
+              <li>
+                <a
+                  href="https://discord.gg/XRZW7ZrkR7"
+                  target="_blank"
+                  title="Community"
+                  >Community</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://esolangs.org/wiki/Prolix"
+                  target="_blank"
+                  title="Wiki"
+                  >Wiki</a
+                >
+              </li>
+              <!-- end: my site -->
+              <!-- ... * you can add more social icons here; link to icons: https://fontawesome.com/v4.7.0/icons/#brand -->
+            </ul>
+          </nav>
+          <!-- end: top nav -->
+
+          <!-- responsive nav: collapse button and template name -->
+          <!-- * this section appears only on small screens (window width less than 992 pixels) -->
+          <div class="navbar-header">
+            <button
+              type="button"
+              class="navbar-toggle responsive-nav-collapse-btn"
+              data-toggle="collapse"
+              data-target="#responsive-nav-collapse"
+            >
+              <!-- * data-target = mobile navigation id -->
+              <i class="fa fa-bars"></i>
+            </button>
+            <a href="#template-url" class="navbar-brand hidden-md hidden-lg"
+              >Prolix</a
+            ><!-- * template name here -->
+          </div>
+          <!-- end: responsive nav: collapse button and template name -->
+
+          <!-- responsive nav -->
+          <!-- * this navigation appears only on small screens (window width less than 992 pixels) -->
+          <!-- * this navigation is designed for mobile devices (mobile navigation) -->
+          <div id="responsive-nav-collapse" class="collapse navbar-collapse">
+            <nav>
+              <ul class="responsive-nav list-unstyled hidden-md hidden-lg">
+                <li class="template-name">
+                  <a href="../index.html" title="Home">Prolix</a>
+                </li>
+                <!-- end: template name -->
+                <!-- support -->
+                <li>
+                  <a href="../download.html" title="Download">Download</a>
+                </li>
+                <li>
+                  <a href="../license.html" title="License">License</a>
+                </li>
+                <!-- end: support -->
+                <!-- my site -->
+                <li>
+                  <a
+                    href="https://discord.gg/XRZW7ZrkR7"
+                    target="_blank"
+                    title="Community"
+                    >Community</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://esolangs.org/wiki/Prolix"
+                    target="_blank"
+                    title="Wiki"
+                    >Wiki</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- end: responsive nav -->
+        </div>
+      </div>
+    </header>
+    <!-- end: header -->
+
+    <!-- documentation heading -->
+    <br />
+    <!-- end: documentation heading -->
+
+    <!-- content -->
+    <section id="docs-content-section">
+      <div class="container">
+        <div class="docs-content-container">
+          <div class="row">
+            <!-- sidebar nav -->
+
+            <!-- end: sidebar nav -->
+
+            <!-- documentation content -->
+            <div class="col-md-12" role="main">
+              <div class="content">
+                <h3>OOPs Concepts in Prolix</h3>
+                <ul>
+                  <li>Class</li>
+                  <li>Objects</li>
+                  <li>Polymorphism</li>
+                  <li>Encapsulation</li>
+                </ul>
+                <h3>Prolix Class</h3>
+                <p>
+                  A class is a collection of objects. A class contains the
+                  blueprints or prototypes from which objects are created. It is
+                  a logical entity that contains a number of attributes.
+                </p>
+                <p>
+                  To comprehend the concept of classes, let's delve into a
+                  scenario where you need to manage information about various
+                  employees in a company. If you were to use a simple list to
+                  represent each employee, you might assign the first element
+                  for their name, the second for their department, and the third
+                  for their hire date. However, as the number of employees
+                  grows, it becomes challenging to discern which element
+                  corresponds to which attribute, leading to confusion.
+                </p>
+
+                <p>
+                  Now, imagine there are 50 employees, each with additional
+                  details like job title, salary, and performance rating. Using
+                  a list would result in an unwieldy structure, making it
+                  difficult to keep track of the information coherently.
+                </p>
+                <p>
+                  This is where classes come into play. Instead of relying on a
+                  list, you can create a class named 'Employee' with attributes
+                  such as name, department, hire date, job title, salary, and
+                  performance rating. Each employee can then be represented as
+                  an instance of this class, providing a structured and
+                  organized way to manage and access information. Classes offer
+                  a clear and intuitive framework for handling complex data,
+                  making it easier to extend and maintain as the scope of
+                  information grows.
+                </p>
+                <h5>Some points on Prolix class:</h5>
+                <ul>
+                  <li>Classes are created by keyword <code>class</code>.</li>
+                  <li>Attributes are the variables that belong to a class.</li>
+                  <li>
+                    Attributes are always public and can be accessed using the
+                    colon (<code>:</code>) operator.
+                  </li>
+                </ul>
+                <h5>Class Definition Syntax:</h5>
+                <pre>
+class ClassName :Attribute1 &lt;value&gt; :AttributeN &lt;value&gt;;
+</pre
+                >
+                <h5>Creating an Empty Class in Prolix</h5>
+                <pre>class Employee;</pre>
+                <h3>Prolix Objects</h3>
+                <p>
+                  In programming, an object is a fundamental concept
+                  representing an entity that combines both state and behavior.
+                  This concept is not limited to abstract ideas but extends
+                  seamlessly to real-world entities such as a mouse, keyboard,
+                  chair, table, or pen. These objects encapsulate attributes or
+                  properties (state) and actions or methods (behavior) that
+                  define their identity and functionality.
+                </p>
+                <p>
+                  Even the most basic data types in programming, like integers
+                  and strings, are treated as objects. For instance, the number
+                  12 is an object, and so is the string "Hello, world." This
+                  object-oriented perspective allows programmers to apply a
+                  unified approach to various elements, making code more
+                  organized and intuitive.
+                </p>
+                <p>
+                  Going a step further, more complex data structures like arrays
+                  and dictionaries are also treated as objects. Arrays, serving
+                  as objects, can contain a collection of other objects,
+                  facilitating data organization. Similarly, dictionaries act as
+                  objects that establish key-value pair relationships, offering
+                  flexibility in representing connections between different
+                  elements.
+                </p>
+                <p>
+                  It's worth noting that every instance of a basic data type is,
+                  essentially, an object. Each object comes with its own set of
+                  attributes and methods, providing a cohesive way to interact
+                  with and manipulate data. This object-oriented approach is
+                  pervasive in programming and plays a crucial role in building
+                  modular, scalable, and maintainable code.
+                </p>
+                <p>
+                  In summary, the concept of objects is ingrained in
+                  programming, offering a systematic way to model both simple
+                  and complex entities. Whether you're dealing with a single
+                  integer, a string, or more intricate data structures, the
+                  principles of objects persist, contributing to a coherent and
+                  efficient programming paradigm.
+                </p>
+                <h5>An object consists of:</h5>
+                <ul>
+                  <li>
+                    <strong>State:</strong> It is represented by the attributes
+                    of an object. It also reflects the properties of an object.
+                  </li>
+                  <li>
+                    <strong>Behavior:</strong> It is represented by the methods
+                    of an object but in Prolix it is usually manipulating
+                    attributes and running code. It also reflects an object's
+                    response to other objects.
+                  </li>
+                  <li>
+                    <strong>Identity:</strong> It gives a unique name to an
+                    object and enables one object to interact with other
+                    objects.
+                  </li>
+                </ul>
+                <p>
+                  To understand the state, behavior, and identity let us take
+                  the example of the class employee.
+                </p>
+                <ul>
+                  <li>
+                    The identity can be considered as the name of the employee.
+                  </li>
+                  <li>
+                    State or Attributes would represent the characteristics or
+                    information associated with each individual employee.
+                  </li>
+                  <li>
+                    Behaviors would represent the actions or operations that an
+                    employee can perform or undergo.
+                  </li>
+                </ul>
+                <h5>Creating an Object</h5>
+                <pre>Employee $obj;</pre>
+                <h5>Class object reference</h5>
+                <p>
+                  In Prolix, class's name is a conventional pre-defined object
+                  of instance attributes in a class. It is used to reference the
+                  instance (object) on which a attribute is affected. This
+                  object is implicitly passed when a attribute is affected on an
+                  object, allowing the attribute to interact with the specific
+                  instance's attributes.
+                </p>
+                <p>
+                  In Prolix, the programming paradigm centers around a unique
+                  concept where objects are defined primarily by their
+                  attributes, and there are no explicit methods. The behavior of
+                  an object is determined by manipulating its special attributes
+                  directly. This attribute-centric approach serves as the
+                  driving force for code execution and functionality within the
+                  language.
+                </p>
+                <pre>
+class MyObject
+    :attr 5
+    :__index__ {
+        $io:write $MyObject:attr; # The output will be "5" if the object has been created
+};
+</pre
+                >
+                <h5>The Prolix <code>__index__</code> Attribute</h5>
+                <p>
+                  This specific attribute, referred to as "initial_state,"
+                  undergoes activation upon the instantiation of an object from
+                  a class. Designed with precision to encapsulate a particular
+                  facet of the object's initial configuration or behavior, this
+                  attribute dynamically becomes active and assumes a
+                  predetermined state as the object is created, thereby
+                  establishing a foundational status for the newly instantiated
+                  entity.
+                </p>
+                <pre>
+class Employee :__index__ {
+    $Employee:name "John";
+};
+
+Employee $employee;
+$io
+    :write "The employee name's "
+    :write $employee1:name
+    :write ".\n";
+$employee:name "David"
+$io
+    :write "Now the employee number name's "
+    :write $employee:name
+    :write ".\n";
+</pre
+                >
+                <h5>Creating objects with affectable attributes</h5>
+
+                <p>
+                  In the context of Prolix, when a class incorporates a special
+                  attribute named <code>__edit__</code>, a distinctive mechanism
+                  is established. This mechanism is designed to create new
+                  affectable attributes, and when an object is instantiated from
+                  this class, the <code>__edit__</code> attribute serves as a
+                  callback or handler. Notably, as object attributes undergo
+                  editing, the name of the edited attribute is automatically
+                  stored in another designated attribute named
+                  <code>__key__</code>. This enables developers to dynamically
+                  track and respond to attribute modifications by referencing
+                  the <code>__key__</code> attribute, providing a powerful and
+                  extensible tool for managing changes in object state within
+                  the Prolix programming paradigm.
+                </p>
+                <p>
+                  The driver code starts by creating two instances of the
+                  Employee class: John and David. The ask_name attribute is
+                  affected in both instances (<code>$John.ask_name</code> and
+                  <code>$David.ask_name</code>), causing each employee to print
+                  a statement with its name.
+                </p>
+                <pre>
+class Employee :name none :__edit__ {
+    $math:eq $Employee:__key__ "ask_name";
+	if $math:result {
+        $io:write "My name is " :write $Employee:name :write "\n";
+	}
+};
+
+# Driver code
+Employee $John :name "John";
+Employee $David :name "David";
+$John:ask_name;
+$David:ask_name;
+</pre
+                >
+                <p>Expected output:</p>
+                <pre>
+My name is John
+My name is David
+</pre
+                >
+                <h3>Prolix Polymorphism</h3>
+                <p>
+                  Polymorphism is a fundamental concept in object-oriented
+                  programming (OOP) that allows objects of different types to be
+                  treated as objects of a common type. This concept promotes
+                  code reusability, flexibility, and abstraction.
+                </p>
+                <h5>Polymorphism and Object-Oriented Programming</h5>
+                <p>
+                  Polymorphism has vast applications in Object-Oriented
+                  Programming. Let’s now create a simple class with polymorphic
+                  affectable attributes:
+                </p>
+                <pre>
+class Animal
+    :type "animal"
+    :__edit__ {
+    $math:eq $Animal:__key__ "display_type";
+    if $math:result {
+        $io:write "This is a " :write $Animal:type :write "\n";
+    }
+};
+
+Animal $Dog :type "dog";
+$Dog:display_type;
+</pre
+                >
+                <p>
+                  In this example, we create a basic class called
+                  <code>Animal</code> with a affectable attribute
+                  <code>display_type</code> that prints the type of the animal.
+                  We then create a new <code>Dog</code> object from the
+                  <code>Animal</code> class and modify its type to
+                  <code>Dog</code>. When the Dog's
+                  <code>display_type</code> attribute is affected, it now prints
+                  <code>This is a dog</code>.
+                </p>
+                <h5>Polymorphism with Shared Affectable Attribute Names</h5>
+                <p>
+                  Polymorphism allows different objects to share affectable
+                  attribute names. Let’s illustrate this with another example
+                  using our <code>Animal</code> class:
+                </p>
+                <pre>
+Animal $Cat :type "cat";
+$Cat:__edit__ {
+    $math:eq $Animal:__key__ "display_type";
+    if $math:result {
+        $io:write "This is a cute " :write $Animal:type :write "\n";
+    }
+};
+$Dog:display_type;
+$Cat:display_type;
+</pre
+                >
+                <p>Expected output:</p>
+                <pre>
+This is a dog
+This is a cute cat
+</pre
+                >
+                <h3>Prolix Encapsulation</h3>
+                <p>
+                  Encapsulation is a fundamental concept in object-oriented
+                  programming (OOP) that involves bundling data (attributes) and
+                  affectable attributes (methods) that operate on the data into
+                  a single unit known as a class. The primary purpose of
+                  encapsulation is to hide the internal implementation details
+                  of an object and expose a controlled and well-defined
+                  interface for interacting with it.
+                </p>
+                <pre>
+class Circle :__edit__ {
+    $math:eq $Circle:__key__ "calculate_area";
+    if $math:result {
+        $math:mul $math:pi $Circle:radius :mul $math:result $Circle:radius;
+    }
+};
+</pre
+                >
+              </div>
+              <!-- /.content -->
+            </div>
+            <!-- end: documentation content -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end: content -->
+
+    <!-- footer -->
+    <footer id="docs-footer">
+      <div class="container">
+        <div class="docs-footer-container">
+          <p>
+            Copyright<i class="fa fa-copyright"></i>2023 - 2024. Prolix Official
+            Site | Author:
+            <a
+              href="https://esolangs.org/wiki/User:Morlus"
+              target="_blank"
+              rel="noopener noreferrer"
+              >_morlus</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- end: footer -->
+
+    <!-- JS files
+================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../assets/js/jquery.min.js?ver=1.12.4"></script>
+    <script src="../assets/js/bootstrap.min.js?ver=3.4.1"></script>
+    <script src="../assets/js/ie10-viewport-bug-workaround.js?ver=3.4.1"></script>
+    <script src="../assets/plugins/prettyPhoto/js/jquery.prettyPhoto.js?ver=3.1.6"></script>
+    <script src="../assets/js/prism.js?ver=1.29.0"></script>
+    <script src="../assets/js/documentation.js?ver=1.0.0"></script>
+  </body>
+</html>

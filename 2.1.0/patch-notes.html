@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Document title -->
+    <title>Prolix 2.1.0 Patch Notes</title>
+
+    <!-- SEO (optional) -->
+    <meta
+      name="description"
+      content="The official documentation of the Prolix Programming Language"
+    />
+    <meta name="author" content="_morlus" />
+    <meta name="robots" content="index, follow" />
+    <!-- noindex, nofollow -->
+    <!-- Open Graph: https://ogp.me/ (optional) -->
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Prolix" />
+    <meta
+      property="og:description"
+      content="The official documentation of the Prolix Programming Language"
+    />
+    <meta property="og:url" content="https://prolix.github.io" />
+    <!-- * Note: Replace with your URL. -->
+    <meta property="og:site_name" content="Prolix" />
+    <meta property="og:image" content="../assets/img/prolix2.1logo.png" />
+    <!-- * Note: Replace with your URL. -->
+    <meta property="og:image:width" content="1000" />
+    <meta property="og:image:height" content="1000" />
+    <!-- Twitter cards: https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started (optional) -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Prolix" />
+    <meta
+      name="twitter:description"
+      content="The official documentation of the Prolix Programming Language"
+    />
+    <meta name="twitter:site" content="https://prolix.github.io" />
+    <!-- * Note: Replace with your URL. -->
+    <meta name="twitter:image" content="../assets/img/prolix2.1logo.png" />
+    <!-- * Note: Replace with your URL. -->
+    <meta name="twitter:creator" content="@_morlus" />
+    <!-- * Note: Add your username (@YourUsername) -->
+
+    <!-- Website icons (optional) -->
+    <link rel="icon" href="../assets/img/prolix2.1logo.png" sizes="32x32" />
+    <link rel="icon" href="../assets/img/prolix2.1logo.png" sizes="192x192" />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="../assets/img/prolix2.1logo.png"
+    />
+    <meta
+      name="msapplication-TileImage"
+      content="../assets/img/prolix2.1logo.png"
+    />
+
+    <!-- Google fonts ( https://fonts.google.com/specimen/Open+Sans ) -->
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Open Sans: 300, 300 Italic, 400, 400 Italic, 600, 600 Italic, 700, 700 Italic; CSS: "font-family: 'Open Sans', sans-serif;" -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS files -->
+    <link href="../assets/css/bootstrap.min.css?ver=3.4.1" rel="stylesheet" />
+    <link
+      href="../assets/css/bootstrap-theme.min.css?ver=3.4.1"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/css/ie10-viewport-bug-workaround.css?ver=3.4.1"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/css/font-awesome.min.css?ver=4.7.0"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/plugins/prettyPhoto/css/prettyPhoto.css?ver=3.1.6"
+      rel="stylesheet"
+    />
+    <link href="../assets/css/prism.css?ver=1.29.0" rel="stylesheet" />
+    <link href="../assets/css/documentation.css?ver=1.0.0" rel="stylesheet" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.min.js?ver=3.7.3"></script>
+      <script src="../assets/js/respond.min.js?ver=1.4.2"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <!-- header -->
+    <header id="docs-header">
+      <div class="container">
+        <div id="top" class="docs-header-container">
+          <!-- * The #top identifier (id="top") is used for the "Back to top" link -->
+
+          <!-- top nav -->
+          <nav class="docs-header-nav hidden-sm hidden-xs">
+            <ul class="docs-header-navigation list-unstyled">
+              <!-- template name -->
+              <li class="template-name">
+                <a href="../index.html" title="Home">Prolix</a>
+              </li>
+              <!-- end: template name -->
+              <!-- support -->
+              <li>
+                <a href="../download.html" title="Download">Download</a>
+              </li>
+              <li>
+                <a href="../license.html" title="License">License</a>
+              </li>
+              <!-- end: support -->
+              <!-- my site -->
+              <li>
+                <a
+                  href="https://discord.gg/XRZW7ZrkR7"
+                  target="_blank"
+                  title="Community"
+                  >Community</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://esolangs.org/wiki/Prolix"
+                  target="_blank"
+                  title="Wiki"
+                  >Wiki</a
+                >
+              </li>
+              <!-- end: my site -->
+              <!-- ... * you can add more social icons here; link to icons: https://fontawesome.com/v4.7.0/icons/#brand -->
+            </ul>
+          </nav>
+          <!-- end: top nav -->
+
+          <!-- responsive nav: collapse button and template name -->
+          <!-- * this section appears only on small screens (window width less than 992 pixels) -->
+          <div class="navbar-header">
+            <button
+              type="button"
+              class="navbar-toggle responsive-nav-collapse-btn"
+              data-toggle="collapse"
+              data-target="#responsive-nav-collapse"
+            >
+              <!-- * data-target = mobile navigation id -->
+              <i class="fa fa-bars"></i>
+            </button>
+            <a href="#template-url" class="navbar-brand hidden-md hidden-lg"
+              >Prolix</a
+            ><!-- * template name here -->
+          </div>
+          <!-- end: responsive nav: collapse button and template name -->
+
+          <!-- responsive nav -->
+          <!-- * this navigation appears only on small screens (window width less than 992 pixels) -->
+          <!-- * this navigation is designed for mobile devices (mobile navigation) -->
+          <div id="responsive-nav-collapse" class="collapse navbar-collapse">
+            <nav>
+              <ul class="responsive-nav list-unstyled hidden-md hidden-lg">
+                <li class="template-name">
+                  <a href="../index.html" title="Home">Prolix</a>
+                </li>
+                <!-- end: template name -->
+                <!-- support -->
+                <li>
+                  <a href="../download.html" title="Download">Download</a>
+                </li>
+                <li>
+                  <a href="../license.html" title="License">License</a>
+                </li>
+                <!-- end: support -->
+                <!-- my site -->
+                <li>
+                  <a
+                    href="https://discord.gg/XRZW7ZrkR7"
+                    target="_blank"
+                    title="Community"
+                    >Community</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://esolangs.org/wiki/Prolix"
+                    target="_blank"
+                    title="Wiki"
+                    >Wiki</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- end: responsive nav -->
+        </div>
+      </div>
+    </header>
+    <!-- end: header -->
+
+    <!-- documentation heading -->
+    <br />
+    <!-- end: documentation heading -->
+
+    <!-- content -->
+    <section id="docs-content-section">
+      <div class="container">
+        <div class="docs-content-container">
+          <div class="row">
+            <!-- sidebar nav -->
+
+            <!-- end: sidebar nav -->
+
+            <!-- documentation content -->
+            <div class="col-md-12" role="main">
+              <div class="content">
+                <h2>Additions</h2>
+                <ul>
+                  <li>
+                    <p>
+                      Introducing a new data type: <code>userdata</code>. It is
+                      designed to store data from console results and can be
+                      utilized by <code>$io:popen</code>.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Added a novel mode for user input: <code>%a</code>. This
+                      mode facilitates reading all user input until the end of
+                      the file (EOF) is reached.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Introduced a new method: <code>$utils:spawn</code>. This
+                      method allows delaying the execution of a
+                      <code>group</code> until the program has completed its
+                      execution.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Added a new library: <code>os</code>. This library
+                      provides a portable way of utilizing operating
+                      system-dependent functionality.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Implemented an overflow error mechanism to handle
+                      situations where a table or object exceeds the system's
+                      capacity.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Introduced a memory error mechanism to address cases where
+                      a table or object becomes too heavy for the available
+                      memory.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Added a new flag to the command environment:
+                      <code>--version</code>. Users can now check the current
+                      version of Prolix with this flag.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Implemented a new EOF error mechanism. The interpreter
+                      will now handle special characters in user input (e.g.,
+                      <code>^Z</code>) by triggering an EOF error.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Added a package manager to facilitate the installation and
+                      creation of modules in collaboration with the community.
+                    </p>
+                  </li>
+                </ul>
+
+                <h2>Changes</h2>
+                <ul>
+                  <li>
+                    <p>
+                      Objects can now be written without spaces. For example,
+                      "<code>$ myObject</code>" is now an accepted format.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Adjusted the object ID range to be from 0x100000 to
+                      0xffffff.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <code>$io:open</code> will now create a new file if the
+                      specified file does not exist.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Updated the module import <code>require</code> statement.
+                      It can now be an identifier instead of a string path,
+                      providing a more straightforward syntax.
+                    </p>
+                  </li>
+                </ul>
+
+                <h2>Fixes</h2>
+                <ul>
+                  <li>
+                    <p>
+                      Negative numbers will now produce an error if the value is
+                      "-".
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      The special attribute <code>__index__</code> will no
+                      longer initialize class attributes.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Resolved issues with the <code>math</code> module. Methods
+                      that do not exist will now generate errors.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Floating-point number calculations have been fixed. For
+                      example, <code>0.1 + 0.2 = 0.30000000000000004</code>.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Removed a supposedly working-class class for the
+                      <code>math</code> class to prevent math domain errors
+                      (e.g., <code>math_edit</code>, <code>_math_edit</code>,
+                      etc.).
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Resolved an issue with method arguments. The conversion of
+                      <code>GArray</code> from C to <code>table</code> in Prolix
+                      now works correctly.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      The <code>require</code> statement can now import modules
+                      from both executable paths and file paths.
+                    </p>
+                  </li>
+                  <li>
+                    <p>Class attribute values can now be a table.</p>
+                  </li>
+                  <li>
+                    <p>
+                      An empty <code>group</code> will now be ignored instead of
+                      performing no action.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Setting type <code>group</code> to an object attribute or
+                      table (array) will now throw an unknown error, causing an
+                      End of Expression (EOE).
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Fixed the interpreter traceback log and resolved the loop
+                      recursion bug.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <code>$utils:tick</code> is now more accurate in measuring
+                      time.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      When the program completes and exits, it will return code
+                      1 instead, preventing the program from encountering a
+                      return error in C.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      System global objects are currently accessible but not
+                      editable in the class's <code>group</code> type.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Prolix's execution speed has been upgraded and is
+                      approximately ~30% faster than the old version.
+                    </p>
+                  </li>
+                </ul>
+                <h4>Did you find the error?</h4>
+                <ul>
+                  <li>
+                    <p>
+                      Join our community by clicking
+                      <a href="https://discord.gg/XRZW7ZrkR7">here</a>.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <!-- /.content -->
+            </div>
+            <!-- end: documentation content -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end: content -->
+
+    <!-- footer -->
+    <footer id="docs-footer">
+      <div class="container">
+        <div class="docs-footer-container">
+          <p>
+            Copyright<i class="fa fa-copyright"></i>2023 - 2024. Prolix Official
+            Site | Author:
+            <a
+              href="https://esolangs.org/wiki/User:Morlus"
+              target="_blank"
+              rel="noopener noreferrer"
+              >_morlus</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- end: footer -->
+
+    <!-- JS files
+================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../assets/js/jquery.min.js?ver=1.12.4"></script>
+    <script src="../assets/js/bootstrap.min.js?ver=3.4.1"></script>
+    <script src="../assets/js/ie10-viewport-bug-workaround.js?ver=3.4.1"></script>
+    <script src="../assets/plugins/prettyPhoto/js/jquery.prettyPhoto.js?ver=3.1.6"></script>
+    <script src="../assets/js/prism.js?ver=1.29.0"></script>
+    <script src="../assets/js/documentation.js?ver=1.0.0"></script>
+  </body>
+</html>

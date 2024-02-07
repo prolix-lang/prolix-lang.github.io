@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Document title -->
+    <title>Prolix - Extending Prolix with C/C++</title>
+
+    <!-- SEO (optional) -->
+    <meta
+      name="description"
+      content="The official documentation of the Prolix Programming Language"
+    />
+    <meta name="author" content="_morlus" />
+    <meta name="robots" content="index, follow" />
+    <!-- noindex, nofollow -->
+    <!-- Open Graph: https://ogp.me/ (optional) -->
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Prolix" />
+    <meta
+      property="og:description"
+      content="The official documentation of the Prolix Programming Language"
+    />
+    <meta property="og:url" content="https://prolix.github.io" />
+    <!-- * Note: Replace with your URL. -->
+    <meta property="og:site_name" content="Prolix" />
+    <meta property="og:image" content="../assets/img/prolix2.1logo.png" />
+    <!-- * Note: Replace with your URL. -->
+    <meta property="og:image:width" content="1000" />
+    <meta property="og:image:height" content="1000" />
+    <!-- Twitter cards: https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started (optional) -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Prolix" />
+    <meta
+      name="twitter:description"
+      content="The official documentation of the Prolix Programming Language"
+    />
+    <meta name="twitter:site" content="https://prolix.github.io" />
+    <!-- * Note: Replace with your URL. -->
+    <meta name="twitter:image" content="../assets/img/prolix2.1logo.png" />
+    <!-- * Note: Replace with your URL. -->
+    <meta name="twitter:creator" content="@_morlus" />
+    <!-- * Note: Add your username (@YourUsername) -->
+
+    <!-- Website icons (optional) -->
+    <link rel="icon" href="../assets/img/prolix2.1logo.png" sizes="32x32" />
+    <link rel="icon" href="../assets/img/prolix2.1logo.png" sizes="192x192" />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="../assets/img/prolix2.1logo.png"
+    />
+    <meta
+      name="msapplication-TileImage"
+      content="../assets/img/prolix2.1logo.png"
+    />
+
+    <!-- Google fonts ( https://fonts.google.com/specimen/Open+Sans ) -->
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Open Sans: 300, 300 Italic, 400, 400 Italic, 600, 600 Italic, 700, 700 Italic; CSS: "font-family: 'Open Sans', sans-serif;" -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS files -->
+    <link href="../assets/css/bootstrap.min.css?ver=3.4.1" rel="stylesheet" />
+    <link
+      href="../assets/css/bootstrap-theme.min.css?ver=3.4.1"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/css/ie10-viewport-bug-workaround.css?ver=3.4.1"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/css/font-awesome.min.css?ver=4.7.0"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/plugins/prettyPhoto/css/prettyPhoto.css?ver=3.1.6"
+      rel="stylesheet"
+    />
+    <link href="../assets/css/prism.css?ver=1.29.0" rel="stylesheet" />
+    <link href="../assets/css/documentation.css?ver=1.0.0" rel="stylesheet" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.min.js?ver=3.7.3"></script>
+      <script src="../assets/js/respond.min.js?ver=1.4.2"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <!-- header -->
+    <header id="docs-header">
+      <div class="container">
+        <div id="top" class="docs-header-container">
+          <!-- * The #top identifier (id="top") is used for the "Back to top" link -->
+
+          <!-- top nav -->
+          <nav class="docs-header-nav hidden-sm hidden-xs">
+            <ul class="docs-header-navigation list-unstyled">
+              <!-- template name -->
+              <li class="template-name">
+                <a href="../index.html" title="Home">Prolix</a>
+              </li>
+              <!-- end: template name -->
+              <!-- support -->
+              <li>
+                <a href="../download.html" title="Download">Download</a>
+              </li>
+              <li>
+                <a href="../license.html" title="License">License</a>
+              </li>
+              <!-- end: support -->
+              <!-- my site -->
+              <li>
+                <a
+                  href="https://discord.gg/XRZW7ZrkR7"
+                  target="_blank"
+                  title="Community"
+                  >Community</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://esolangs.org/wiki/Prolix"
+                  target="_blank"
+                  title="Wiki"
+                  >Wiki</a
+                >
+              </li>
+              <!-- end: my site -->
+              <!-- ... * you can add more social icons here; link to icons: https://fontawesome.com/v4.7.0/icons/#brand -->
+            </ul>
+          </nav>
+          <!-- end: top nav -->
+
+          <!-- responsive nav: collapse button and template name -->
+          <!-- * this section appears only on small screens (window width less than 992 pixels) -->
+          <div class="navbar-header">
+            <button
+              type="button"
+              class="navbar-toggle responsive-nav-collapse-btn"
+              data-toggle="collapse"
+              data-target="#responsive-nav-collapse"
+            >
+              <!-- * data-target = mobile navigation id -->
+              <i class="fa fa-bars"></i>
+            </button>
+            <a href="#template-url" class="navbar-brand hidden-md hidden-lg"
+              >Prolix</a
+            ><!-- * template name here -->
+          </div>
+          <!-- end: responsive nav: collapse button and template name -->
+
+          <!-- responsive nav -->
+          <!-- * this navigation appears only on small screens (window width less than 992 pixels) -->
+          <!-- * this navigation is designed for mobile devices (mobile navigation) -->
+          <div id="responsive-nav-collapse" class="collapse navbar-collapse">
+            <nav>
+              <ul class="responsive-nav list-unstyled hidden-md hidden-lg">
+                <li class="template-name">
+                  <a href="../index.html" title="Home">Prolix</a>
+                </li>
+                <!-- end: template name -->
+                <!-- support -->
+                <li>
+                  <a href="../download.html" title="Download">Download</a>
+                </li>
+                <li>
+                  <a href="../license.html" title="License">License</a>
+                </li>
+                <!-- end: support -->
+                <!-- my site -->
+                <li>
+                  <a
+                    href="https://discord.gg/XRZW7ZrkR7"
+                    target="_blank"
+                    title="Community"
+                    >Community</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://esolangs.org/wiki/Prolix"
+                    target="_blank"
+                    title="Wiki"
+                    >Wiki</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- end: responsive nav -->
+        </div>
+      </div>
+    </header>
+    <!-- end: header -->
+
+    <!-- documentation heading -->
+    <br />
+    <!-- end: documentation heading -->
+
+    <!-- content -->
+    <section id="docs-content-section">
+      <div class="container">
+        <div class="docs-content-container">
+          <div class="row">
+            <!-- sidebar nav -->
+
+            <!-- end: sidebar nav -->
+
+            <!-- documentation content -->
+            <div class="col-md-12" role="main">
+              <div class="content">
+                <h3>Extending Prolix with C/C++</h3>
+                <p>
+                  Expanding the capabilities of Prolix through the integration
+                  of new modules is a straightforward endeavor for those
+                  proficient in C programming. This extensibility empowers
+                  developers to accomplish tasks within Prolix that might be
+                  challenging or impossible through native Prolix functionality
+                  alone. The augmentation of Prolix functionality via these
+                  modules encompasses two significant capabilities: the
+                  introduction of novel integrated objects and the invocation of
+                  C library functions and system calls.
+                </p>
+                <p>
+                  When crafting extensions in C, developers can seamlessly
+                  introduce innovative types of integrated objects, broadening
+                  the repertoire of available tools within the Prolix
+                  programming environment. These new objects can be tailored to
+                  address specific needs or perform specialized tasks, enhancing
+                  the language's versatility and adaptability to diverse
+                  programming requirements.
+                </p>
+                <p>
+                  Moreover, the integration of C modules allows developers to
+                  tap into the rich ecosystem of C libraries and leverage
+                  existing system calls. This not only facilitates the reuse of
+                  well-established and optimized functionality but also opens up
+                  avenues for interfacing with low-level system operations that
+                  might be crucial for certain applications.
+                </p>
+                <p>
+                  The process of integrating these modules involves a harmonious
+                  synergy between Prolix and C, where the strengths of each
+                  language complement the other. Developers can seamlessly
+                  bridge the gap between Prolix's simplicity and C's robust
+                  capabilities, achieving a balance that caters to both
+                  high-level and low-level programming needs.
+                </p>
+                <p>
+                  In essence, the extensibility offered by integrating new C
+                  modules into Prolix not only broadens the language's horizons
+                  by introducing diverse object types but also connects it with
+                  the powerful functionalities inherent in C libraries and
+                  system calls. This symbiotic relationship between Prolix and C
+                  provides developers with a flexible and potent environment for
+                  addressing a myriad of programming challenges.
+                </p>
+                <h5>
+                  Integrating C Code as Shared Library for Prolix with GCC
+                </h5>
+                <p>
+                  Let’s look at an example function in a file called
+                  <code>square.c</code>:
+                </p>
+                <pre>
+int square(int i) {
+    return i * i;
+}</pre
+                >
+                <p>
+                  Let's elaborate on the compilation process, explaining each
+                  component of the command and providing additional details on
+                  the flags used:
+                </p>
+                <pre>
+gcc -fPIC -shared -o libsquare.dll square.c -Wall -Werror -Wextra -pedantic
+</pre
+                >
+                <p><strong>Breaking down the extended command:</strong></p>
+                <ul>
+                  <li>
+                    <strong><code>gcc</code></strong
+                    >: As mentioned earlier, this invokes the GNU Compiler
+                    Collection, a vital tool for compiling C code.
+                  </li>
+                  <li>
+                    <strong><code>-fPIC</code></strong
+                    >: This flag, short for
+                    <strong>Position Independent Code</strong>, is crucial when
+                    creating a shared library. It ensures that the compiled code
+                    can be loaded at any memory address, enhancing flexibility
+                    and compatibility.
+                  </li>
+                  <li>
+                    <strong><code>-shared</code></strong
+                    >: This flag signifies that we are generating a shared
+                    library, also known as a dynamic link library (.dll on
+                    Windows or .so on Unix-like systems).
+                  </li>
+                  <li>
+                    <strong><code>-o libsquare.dll</code></strong
+                    >: Here, we specify the output file's name using the
+                    <code>-o</code> option. In this case, it's a shared library
+                    named <code>libsquare.so</code>. Adjust the extension based
+                    on the platform (<code>.dll</code> for Windows, .so for
+                    Unix-like systems).
+                  </li>
+                  <li>
+                    <strong><code>square.c</code></strong
+                    >: This is the C source code file that we intend to compile.
+                    Replace it with the actual name of your C source file.
+                  </li>
+                  <li>
+                    <strong><code>-Wall -Werror -Wextra -pedantic</code></strong
+                    >: These flags, as discussed previously, activate various
+                    warning messages, treat warnings as errors, and enforce
+                    strict adherence to coding standards. They contribute to
+                    code quality and robustness.
+                  </li>
+                </ul>
+                <p>
+                  Upon successful compilation, you will obtain a shared library
+                  file (e.g., libsquare.so or clib.dll) that contains the
+                  compiled code from the square.c file. This library can then be
+                  imported and utilized in the Prolix code.
+                </p>
+                <p>
+                  Remember to place the compiled library file in a directory
+                  accessible to Prolix and adjust any necessary import
+                  statements or flags in the Prolix code to reference the newly
+                  compiled library. This meticulous approach ensures a smooth
+                  integration process, allowing the Prolix code to seamlessly
+                  leverage the functionality provided by the compiled C code.
+                </p>
+                <h3>Place Prolix Script and Compiled Library</h3>
+                <p>
+                  Ensuring a smooth integration involves organizing your project
+                  directory. Follow these detailed steps:
+                </p>
+                <h5>Move the Compiled Library</h5>
+                <p>
+                  Place the compiled library file (<code>libsquare.dll</code>)
+                  in the same directory as your Prolix script. This ensures
+                  convenient access during runtime.
+                </p>
+                <pre>
+cp libsquare.dll /path/to/prolix/scripts/
+</pre
+                >
+                <h5>Include Prolix Script</h5>
+                <p>
+                  Ensure the Prolix script (<code>square.prlx</code>) is also in
+                  the same directory:
+                </p>
+                <pre>cp square.prlx /path/to/prolix/scripts/</pre>
+                <p>
+                  By consolidating both files in a single directory, you
+                  simplify the import process and enhance overall project
+                  organization.
+                </p>
+                <p>
+                  Now that your project directory is well-organized, proceed to
+                  modify your Prolix script (<code>square.prlx</code>) to
+                  include the following import statement. This ensures access to
+                  the functionalities provided by the compiled C code:
+                </p>
+                <pre>
+$cdll:open "libsquare.dll";
+</pre
+                >
+                <p>
+                  This <code>$cdll:open</code> opens the C library file, making
+                  its functions available for use in your Prolix script.
+                </p>
+                <p>
+                  Now that the library is imported, you can call functions from
+                  it. Now you have a function named "square" with attributes
+                  <code>2</code> and <code>4</code>, use the following syntax:
+                </p>
+                <pre>
+$cdll:load "square" 2 4;
+</pre
+                >
+                <p>
+                  This statement loads the C function "square" with the
+                  specified attributes, allowing you to call and utilize its
+                  functionality in your Prolix script.
+                </p>
+                <p>
+                  Here is a slight modification to the provided code for
+                  clarity:
+                </p>
+                <pre>
+$cdll:open "libsquare.dll";
+$cdll:load "square" 2 4;
+$io:write $cdll:result; # Expected output: 16
+</pre
+                >
+                <h3>Conclusion: Seamless Integration Achieved</h3>
+                <p>
+                  By diligently following these comprehensive steps, you have
+                  successfully integrated your compiled C code into the Prolix
+                  codebase. Placing both the compiled library and Prolix script
+                  in the same directory streamlines the import process, allowing
+                  Prolix to effortlessly leverage the powerful functionalities
+                  provided by the C code. This organized approach ensures a
+                  robust and efficient development environment for your Prolix
+                  project.
+                </p>
+              </div>
+              <!-- /.content -->
+            </div>
+            <!-- end: documentation content -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end: content -->
+
+    <!-- footer -->
+    <footer id="docs-footer">
+      <div class="container">
+        <div class="docs-footer-container">
+          <p>
+            Copyright<i class="fa fa-copyright"></i>2023 - 2024. Prolix Official
+            Site | Author:
+            <a
+              href="https://esolangs.org/wiki/User:Morlus"
+              target="_blank"
+              rel="noopener noreferrer"
+              >_morlus</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- end: footer -->
+
+    <!-- JS files
+================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../assets/js/jquery.min.js?ver=1.12.4"></script>
+    <script src="../assets/js/bootstrap.min.js?ver=3.4.1"></script>
+    <script src="../assets/js/ie10-viewport-bug-workaround.js?ver=3.4.1"></script>
+    <script src="../assets/plugins/prettyPhoto/js/jquery.prettyPhoto.js?ver=3.1.6"></script>
+    <script src="../assets/js/prism.js?ver=1.29.0"></script>
+    <script src="../assets/js/documentation.js?ver=1.0.0"></script>
+  </body>
+</html>

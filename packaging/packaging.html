@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Document title -->
+    <title>Prolix Packaging - Packaging Projects</title>
+
+    <!-- SEO (optional) -->
+    <meta
+      name="description"
+      content="The official documentation of the Prolix Programming Language"
+    />
+    <meta name="author" content="_morlus" />
+    <meta name="robots" content="index, follow" />
+    <!-- noindex, nofollow -->
+    <!-- Open Graph: https://ogp.me/ (optional) -->
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Prolix" />
+    <meta
+      property="og:description"
+      content="The official documentation of the Prolix Programming Language"
+    />
+    <meta property="og:url" content="https://prolix.github.io" />
+    <!-- * Note: Replace with your URL. -->
+    <meta property="og:site_name" content="Prolix" />
+    <meta property="og:image" content="../assets/img/prolix2.1logo.png" />
+    <!-- * Note: Replace with your URL. -->
+    <meta property="og:image:width" content="1000" />
+    <meta property="og:image:height" content="1000" />
+    <!-- Twitter cards: https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started (optional) -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Prolix" />
+    <meta
+      name="twitter:description"
+      content="The official documentation of the Prolix Programming Language"
+    />
+    <meta name="twitter:site" content="https://prolix.github.io" />
+    <!-- * Note: Replace with your URL. -->
+    <meta name="twitter:image" content="../assets/img/prolix2.1logo.png" />
+    <!-- * Note: Replace with your URL. -->
+    <meta name="twitter:creator" content="@_morlus" />
+    <!-- * Note: Add your username (@YourUsername) -->
+
+    <!-- Website icons (optional) -->
+    <link rel="icon" href="../assets/img/prolix2.1logo.png" sizes="32x32" />
+    <link rel="icon" href="../assets/img/prolix2.1logo.png" sizes="192x192" />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="../assets/img/prolix2.1logo.png"
+    />
+    <meta
+      name="msapplication-TileImage"
+      content="../assets/img/prolix2.1logo.png"
+    />
+
+    <!-- Google fonts ( https://fonts.google.com/specimen/Open+Sans ) -->
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Open Sans: 300, 300 Italic, 400, 400 Italic, 600, 600 Italic, 700, 700 Italic; CSS: "font-family: 'Open Sans', sans-serif;" -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS files -->
+    <link href="../assets/css/bootstrap.min.css?ver=3.4.1" rel="stylesheet" />
+    <link
+      href="../assets/css/bootstrap-theme.min.css?ver=3.4.1"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/css/ie10-viewport-bug-workaround.css?ver=3.4.1"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/css/font-awesome.min.css?ver=4.7.0"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/plugins/prettyPhoto/css/prettyPhoto.css?ver=3.1.6"
+      rel="stylesheet"
+    />
+    <link href="../assets/css/prism.css?ver=1.29.0" rel="stylesheet" />
+    <link href="../assets/css/documentation.css?ver=1.0.0" rel="stylesheet" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.min.js?ver=3.7.3"></script>
+      <script src="../assets/js/respond.min.js?ver=1.4.2"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <!-- header -->
+    <header id="docs-header">
+      <div class="container">
+        <div id="top" class="docs-header-container">
+          <!-- * The #top identifier (id="top") is used for the "Back to top" link -->
+
+          <!-- top nav -->
+          <nav class="docs-header-nav hidden-sm hidden-xs">
+            <ul class="docs-header-navigation list-unstyled">
+              <!-- template name -->
+              <li class="template-name">
+                <a href="../index.html" title="Home">Prolix</a>
+              </li>
+              <!-- end: template name -->
+              <!-- support -->
+              <li>
+                <a href="../download.html" title="Download">Download</a>
+              </li>
+              <li>
+                <a href="../license.html" title="License">License</a>
+              </li>
+              <!-- end: support -->
+              <!-- my site -->
+              <li>
+                <a
+                  href="https://discord.gg/XRZW7ZrkR7"
+                  target="_blank"
+                  title="Community"
+                  >Community</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://esolangs.org/wiki/Prolix"
+                  target="_blank"
+                  title="Wiki"
+                  >Wiki</a
+                >
+              </li>
+              <!-- end: my site -->
+              <!-- ... * you can add more social icons here; link to icons: https://fontawesome.com/v4.7.0/icons/#brand -->
+            </ul>
+          </nav>
+          <!-- end: top nav -->
+
+          <!-- responsive nav: collapse button and template name -->
+          <!-- * this section appears only on small screens (window width less than 992 pixels) -->
+          <div class="navbar-header">
+            <button
+              type="button"
+              class="navbar-toggle responsive-nav-collapse-btn"
+              data-toggle="collapse"
+              data-target="#responsive-nav-collapse"
+            >
+              <!-- * data-target = mobile navigation id -->
+              <i class="fa fa-bars"></i>
+            </button>
+            <a href="#template-url" class="navbar-brand hidden-md hidden-lg"
+              >Prolix</a
+            ><!-- * template name here -->
+          </div>
+          <!-- end: responsive nav: collapse button and template name -->
+
+          <!-- responsive nav -->
+          <!-- * this navigation appears only on small screens (window width less than 992 pixels) -->
+          <!-- * this navigation is designed for mobile devices (mobile navigation) -->
+          <div id="responsive-nav-collapse" class="collapse navbar-collapse">
+            <nav>
+              <ul class="responsive-nav list-unstyled hidden-md hidden-lg">
+                <li class="template-name">
+                  <a href="../index.html" title="Home">Prolix</a>
+                </li>
+                <!-- end: template name -->
+                <!-- support -->
+                <li>
+                  <a href="../download.html" title="Download">Download</a>
+                </li>
+                <li>
+                  <a href="../license.html" title="License">License</a>
+                </li>
+                <!-- end: support -->
+                <!-- my site -->
+                <li>
+                  <a
+                    href="https://discord.gg/XRZW7ZrkR7"
+                    target="_blank"
+                    title="Community"
+                    >Community</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://esolangs.org/wiki/Prolix"
+                    target="_blank"
+                    title="Wiki"
+                    >Wiki</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- end: responsive nav -->
+        </div>
+      </div>
+    </header>
+    <!-- end: header -->
+
+    <!-- documentation heading -->
+    <br />
+    <!-- end: documentation heading -->
+
+    <!-- content -->
+    <section id="docs-content-section">
+      <div class="container">
+        <div class="docs-content-container">
+          <div class="row">
+            <!-- sidebar nav -->
+
+            <!-- end: sidebar nav -->
+
+            <!-- documentation content -->
+            <div class="col-md-12" role="main">
+              <div class="content">
+                <h3>A simple project</h3>
+                <p>
+                  Now let's say we create a new package and name it
+                  <code>package</code>.
+                </p>
+                <pre>
+my_package/
+├── package.prlx
+└── spec.prlx
+</pre
+                >
+                <p>
+                  The folder named <code>my_package</code> is just named and the
+                  name is not important while creating the package.
+                </p>
+                <p>
+                  The file <code>package.prlx</code> is the main file for the
+                  package so that when the user uses the package, this file will
+                  be run.
+                </p>
+                <p>
+                  The <code>spec.prlx</code> file is considered the most
+                  important file when the package is downloaded because it is
+                  used to store information for the package and if it is not
+                  there, it means the package cannot be downloaded even if it is
+                  deleted using <code>ppm</code>.
+                </p>
+                <p>
+                  Here is an example for the files <code>example.prlx</code> and
+                  <code>spec.prlx</code>:
+                </p>
+                <pre>
+class factorial :__edit__ {
+    $math:eq $factorial:__key__ "do";
+    if $math:result {
+        $math:r 1 :i 1;
+        loop $factorial:do {
+            $math:mul $math:r $math:i;
+            $math:r $math:result;
+            $math:add $math:i 1;
+            $math:i $math:result;
+        }
+        $factorial:result $math:r;
+    }
+}
+factorial $factorial;
+</pre
+                >
+                <pre>
+class config
+    :name "package"
+    :version "1.0.0";
+
+class info
+    :summary "A normal testing package"
+    :description none # No description
+    :license "MIT" # A license that PPM supported
+    :tags "tools"
+    :dependencies "prolix >= 2.1.0"
+    :homepage "https://github.com/prolix/sort";
+
+class build
+    :source "package.zip"
+    :username "Your username"
+    :password "Your password"
+    :api_key "Your API key";
+</pre
+                >
+                <h3>Including other files</h3>
+                <p>
+                  To add other files to your package, you need to create a
+                  folder with the same name as your package.
+                </p>
+                <pre>
+my_package/
+├── package/
+│   └── external_file.prlx
+├── package.prlx
+└── spec.prlx
+</pre
+                >
+                <h3>Uploading the distribution archives</h3>
+                <p>
+                  Finally, it’s time to upload your package to the PPM Server!
+                </p>
+                <p>
+                  The first thing you’ll need to do is register an account by
+                  using command <code>ppm register</code>, which is a separate
+                  instance of the package index intended for testing and
+                  experimentation. It’s great for things like this tutorial
+                  where we don’t necessarily want to upload to the real index.
+                  Register an account and complete the steps on that command
+                  asked. You will also need to verify your email address before
+                  you’re able to upload any packages.
+                </p>
+                <p>
+                  When you've verified that creating an accound, you can upload
+                  it to the PPM server with the upload command but you must
+                  compress your package into a zip file:
+                </p>
+                <pre>
+my_package/
+├── package.zip
+└── spec.prlx
+</pre
+                >
+                <pre>
+ppm upload C:/Users/Admin/Desktop/my_package/spec.prlx
+</pre
+                >
+                <p>
+                  After the command completes, you should see output similar to
+                  this:
+                </p>
+                <pre>
+Clearing all caches.. done
+Connecting to the server.. done
+Searching package for package.. failed
+Successfully uploaded package@1.0.0</pre
+                >
+                <h3>Installing your newly uploaded package</h3>
+                <p>
+                  You can use <code>ppm</code> to install your package and
+                  verify that it works.
+                </p>
+                <pre>ppm install package</pre>
+                <p>
+                  pip should install the package from PPM server and the output
+                  should look something like this:
+                </p>
+                <pre>
+Connecting to the server.. done
+Searching package for sort.. done
+Searching lastest version for sort.. done
+Collecting sort@1.0.0
+  Installing sort.zip (533 B)..
+Successfully installed sort@1.0.0
+Clearing all caches.. done</pre
+                >
+                <p>
+                  You can test that it was installed correctly by importing the
+                  package. Make sure you’re still in your virtual environment,
+                  then run Prolix:
+                </p>
+                <pre>
+> require package
+> $factorial:do 7
+> $io:write $factorial:result :write "\n"
+5040</pre
+                >
+              </div>
+              <!-- /.content -->
+            </div>
+            <!-- end: documentation content -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end: content -->
+
+    <!-- footer -->
+    <footer id="docs-footer">
+      <div class="container">
+        <div class="docs-footer-container">
+          <p>
+            Copyright<i class="fa fa-copyright"></i>2023 - 2024. Prolix Official
+            Site | Author:
+            <a
+              href="https://esolangs.org/wiki/User:Morlus"
+              target="_blank"
+              rel="noopener noreferrer"
+              >_morlus</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- end: footer -->
+
+    <!-- JS files
+================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../assets/js/jquery.min.js?ver=1.12.4"></script>
+    <script src="../assets/js/bootstrap.min.js?ver=3.4.1"></script>
+    <script src="../assets/js/ie10-viewport-bug-workaround.js?ver=3.4.1"></script>
+    <script src="../assets/plugins/prettyPhoto/js/jquery.prettyPhoto.js?ver=3.1.6"></script>
+    <script src="../assets/js/prism.js?ver=1.29.0"></script>
+    <script src="../assets/js/documentation.js?ver=1.0.0"></script>
+  </body>
+</html>

@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<!-- Document title -->
+	<title>Prolix - Standard Libraries</title>
+
+	<!-- SEO (optional) -->
+	<meta name="description" content="The official documentation of the Prolix Programming Language">
+	<meta name="author" content="_morlus">
+	<meta name="robots" content="index, follow"><!-- noindex, nofollow -->
+	<!-- Open Graph: https://ogp.me/ (optional) -->
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Prolix">
+	<meta property="og:description" content="The official documentation of the Prolix Programming Language">
+	<meta property="og:url" content="https://prolix.github.io"><!-- * Note: Replace with your URL. -->
+	<meta property="og:site_name" content="Prolix">
+	<meta property="og:image" content="../assets/img/prolix2.1logo.png"><!-- * Note: Replace with your URL. -->
+	<meta property="og:image:width" content="1000">
+	<meta property="og:image:height" content="1000">
+	<!-- Twitter cards: https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started (optional) -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Prolix">
+	<meta name="twitter:description" content="The official documentation of the Prolix Programming Language">
+	<meta name="twitter:site" content="https://prolix.github.io"><!-- * Note: Replace with your URL. -->
+	<meta name="twitter:image" content="../assets/img/prolix2.1logo.png"><!-- * Note: Replace with your URL. -->
+	<meta name="twitter:creator" content="@_morlus"><!-- * Note: Add your username (@YourUsername) -->
+
+	<!-- Website icons (optional) -->
+	<link rel="icon" href="../assets/img/prolix2.1logo.png" sizes="32x32">
+	<link rel="icon" href="../assets/img/prolix2.1logo.png" sizes="192x192">
+	<link rel="apple-touch-icon-precomposed" href="../assets/img/prolix2.1logo.png">
+	<meta name="msapplication-TileImage" content="../assets/img/prolix2.1logo.png">
+
+	<!-- Google fonts ( https://fonts.google.com/specimen/Open+Sans ) -->
+	<!-- Preconnect -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<!-- Open Sans: 300, 300 Italic, 400, 400 Italic, 600, 600 Italic, 700, 700 Italic; CSS: "font-family: 'Open Sans', sans-serif;" -->
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+	<!-- CSS files -->
+	<link href="../assets/css/bootstrap.min.css?ver=3.4.1" rel="stylesheet">
+	<link href="../assets/css/bootstrap-theme.min.css?ver=3.4.1" rel="stylesheet">
+	<link href="../assets/css/ie10-viewport-bug-workaround.css?ver=3.4.1" rel="stylesheet">
+	<link href="../assets/css/font-awesome.min.css?ver=4.7.0" rel="stylesheet">
+	<link href="../assets/plugins/prettyPhoto/css/prettyPhoto.css?ver=3.1.6" rel="stylesheet">
+	<link href="../assets/css/prism.css?ver=1.29.0" rel="stylesheet">
+	<link href="../assets/css/documentation.css?ver=1.0.0" rel="stylesheet">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+		<script src="../assets/js/html5shiv.min.js?ver=3.7.3"></script>
+		<script src="../assets/js/respond.min.js?ver=1.4.2"></script>
+	<![endif]-->
+</head>
+
+<body>
+
+<!-- header -->
+<header id="docs-header">
+	<div class="container">
+		<div id="top" class="docs-header-container"><!-- * The #top identifier (id="top") is used for the "Back to top" link -->
+
+			<!-- top nav -->
+			<nav class="docs-header-nav hidden-sm hidden-xs">
+				<ul class="docs-header-navigation list-unstyled">
+					<!-- template name -->
+					<li class="template-name">
+						<a href="../index.html" title="Home">Prolix</a>
+					</li>
+					<!-- end: template name -->
+					<!-- support -->
+					<li>
+						<a href="../download.html" title="Download">Download</a>
+					</li>
+              <li>
+                <a href="../license.html" title="License">License</a>
+              </li>
+					<!-- end: support -->
+					<!-- my site -->
+					<li>
+						<a href="https://discord.gg/XRZW7ZrkR7" target="_blank" title="Community">Community</a>
+					</li>
+					<li>
+						<a href="https://esolangs.org/wiki/Prolix" target="_blank" title="Wiki">Wiki</a>
+					</li>
+					<!-- end: my site -->
+					<!-- ... * you can add more social icons here; link to icons: https://fontawesome.com/v4.7.0/icons/#brand -->
+				</ul>
+			</nav>
+			<!-- end: top nav -->
+
+			<!-- responsive nav: collapse button and template name -->
+			<!-- * this section appears only on small screens (window width less than 992 pixels) -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle responsive-nav-collapse-btn" data-toggle="collapse" data-target="#responsive-nav-collapse"><!-- * data-target = mobile navigation id -->
+					<i class="fa fa-bars"></i>
+				</button>
+				<a href="#template-url" class="navbar-brand hidden-md hidden-lg">Prolix</a><!-- * template name here -->
+			</div>
+			<!-- end: responsive nav: collapse button and template name -->
+
+			<!-- responsive nav -->
+			<!-- * this navigation appears only on small screens (window width less than 992 pixels) -->
+			<!-- * this navigation is designed for mobile devices (mobile navigation) -->
+			<div id="responsive-nav-collapse" class="collapse navbar-collapse">
+				<nav>
+					<ul class="responsive-nav list-unstyled hidden-md hidden-lg">
+						<li class="template-name">
+							<a href="../index.html" title="Home">Prolix</a>
+						</li>
+						<!-- end: template name -->
+						<!-- support -->
+						<li>
+							<a href="../download.html" title="Download">Download</a>
+						</li>
+              <li>
+                <a href="../license.html" title="License">License</a>
+              </li>
+						<!-- end: support -->
+						<!-- my site -->
+						<li>
+							<a href="https://discord.gg/XRZW7ZrkR7" target="_blank" title="Community">Community</a>
+						</li>
+						<li>
+							<a href="https://esolangs.org/wiki/Prolix" target="_blank" title="Wiki">Wiki</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<!-- end: responsive nav -->
+
+		</div>
+	</div>
+</header>
+<!-- end: header -->
+
+<!-- documentation heading -->
+<br>
+<!-- end: documentation heading -->
+
+<!-- content -->
+<section id="docs-content-section">
+	<div class="container">
+		<div class="docs-content-container">
+			<div class="row">
+
+				<!-- sidebar nav -->
+
+				<!-- end: sidebar nav -->
+
+				<!-- documentation content -->
+				<div class="col-md-12" role="main">
+					<div class="content">
+						<style>h5 {font-weight: normal; font-family: ui-monospace, "Cascadia Mono", "Segoe UI Mono", "Liberation Mono", Menlo, Monaco, Consolas, monospace;};</style>
+						<h1>The Standard Libraries</h3>
+						<p>Currently, Prolix has the following standard libraries:</p>
+						<ul>
+							<li>utilities library (<a href="#utils">utils</a>);</li>
+							<li>string manipulation (<a href="#string">string</a>);</li>
+							<li>table manipulation (<a href="#table">table</a>);</li>
+							<li>mathematical functions (<a href="#math">math</a>);</li>
+							<li>input and output (<a href="#io">io</a>);</li>
+							<li>operating system facilities (new in version 2.1.0) (<a href="#os">os</a>);</li>
+							<li>garbage collection facilities (<a href="#garbagecollect">garbagecollect</a>)</li>
+							<li>C dynamic library loader (<a href="#cdll">cdll</a>);</li>
+						</ul>
+						<p>To have access to these libraries, you can create a new class with the same name as that library because those objects are simply pre-defined objects before the program is run.</p>
+					<div class="alert alert-info" role="alert">
+						All Prolix library objects, when completing an attribute (function) call, the value of the result will always be stored in the <code>result</code> attribute.
+					</div>
+						<h3 id="utils"><a href="#utils">utils</a> - Utilities Library (Basic Library)</h5>
+					<p>The fundamental library, an integral component of Prolix, serves as the cornerstone by offering essential core functions that lay the groundwork for the entire framework. In the absence of its inclusion in your application, it becomes imperative to conduct a meticulous examination, scrutinizing the need for alternative implementations for specific facilities within the library. This thorough assessment is crucial to ensure that all requisite functionalities are appropriately addressed and seamlessly integrated into your application, thereby upholding the robustness and coherence of the overall system.</p>
+					<h5>utils:<strong>exec</strong><span style="font-style: italic"> object</span></h5>
+					<p>This function supports dynamic execution of Prolix code. object must be either a string. The string is parsed as a suite of Prolix statements which is then executed (unless a syntax error occurs).</p>
+					<h5>utils:<strong>tostr</strong><span style="font-style: italic"> object</span></h5>
+					<p>Receives a value of any type and converts it to a string in a human-readable format.</p>
+					<h5>utils:<strong>tonum</strong><span style="font-style: italic"> object</span></h5>
+					<p>When called with no base, <code>tonum</code> tries to convert its argument to a number. If the argument is already a number or a string convertible to a number, then tonumber returns this number; otherwise, it returns <strong>none</strong>.</p>
+					<h5>utils:<strong>type</strong><span style="font-style: italic"> object</span></h5>
+					<p>Returns the type of its only argument, coded as a string. The possible results of this function are "none" (a string, not the value <strong>none</strong>), "num", "str", "group", "table", "file", "userdata", "cdll".</p>
+					<h5>utils:<strong>assert</strong><span style="font-style: italic"> object</span></h5>
+					<p>Raises an error if the value of its argument <code>object</code> is false (i.e., <strong>none</strong> or empty objects). In case of error, message is <code>"assertion failed"</code>.</p>
+					<h5>utils:<strong>error</strong><span style="font-style: italic"> message</span></h5>
+					<p>Raises an error with custom <code>message</code>.</p>
+					<h5>utils:<strong>do</strong><span style="font-style: italic"> group</span></h5>
+					<p>Runs the provided <strong>group</strong> and catches any error it throws, returning the group's success and its results.</p>
+					<pre>$utils:do {
+    $math:div 2 0;
+}
+$table:get $utils:result 0;
+$io:write $table:result; # Expected output: 0
+# Because 2 cannot divide with 0 so the "group" report error but the "$utils:do" catch it and store error in entry at index 1.</pre>
+					<h5>utils:<strong>exit</strong><span style="font-size: 75%"> (New in version 2.0.1) (Deprecated in version 2.1)</span></h5>
+					<p>Exit program instantly.</p>
+					<h5>utils:<strong>tick</strong><span style="font-size: 75%"> (New in version 2.0.1)</span></h5>
+					<p>Returns an approximation of the amount in seconds of the program execution and is intended for use in benchmarking.</p>
+<pre>
+# Record the initial time:
+$utils:tick;
+$utils:start $utils:result;
+
+# Do something you want to measure the performance of:
+$math:a 0 :b 1;
+loop 100 {
+    $math:a $math:b :b $math:a;
+}
+
+# Measure amount of time this took:
+$utils:tick;
+$math:sub $utils:result $utils:start;
+$io:write "Elapsed time: " :write $math:result;
+
+# Expected output: Elapsed time:  0.020003795623779297
+# Actual number may vary
+</pre>
+					<h3 id="string"><a href="#string">string</a> - String Manipulation</h3>
+					<p>Within this library, housed under the $string object (or string class), an extensive array of generic functions is bestowed upon users, specifically tailored for the meticulous manipulation of strings. These functions encompass a broad spectrum of operations, ranging from the identification and extraction of substrings to the execution of various string-based manipulations, contributing to a heightened level of flexibility and efficiency in string-related tasks.</p>
+					<h5>string:<strong>concat</strong><span style="font-style: italic"> object ...</span></h5>
+					<p>Combine all strings into one string and if the given argument is not a string, it will also be converted to a string and then combined.</p>
+					<h5>string:<strong>upper</strong><span style="font-style: italic"> string</span></h5>
+					<p>Converts a string into upper case.</p>
+					<h5>string:<strong>lower</strong><span style="font-style: italic"> string</span></h5>
+					<p>Converts a string into lower case.</p>
+					<h5>string:<strong>reverse</strong><span style="font-style: italic"> string</span></h5>
+					<p>Converts a string into reversed string.</p>
+					<h5>string:<strong>length</strong><span style="font-style: italic"> string</span><span style="font-size: 75%"> (Deprecated in version 2.0.1)</span></h5>
+					<p>Results a length of string.</p>
+					<h5>string:<strong>char</strong><span style="font-style: italic"> string index</span></h5>
+					<p>Results a character of string by index.</p>
+					<h5>string:<strong>repeat</strong><span style="font-style: italic"> string amount</span></h5>
+					<p>Returns a string that is the concatenation of <code>amount</code> copies of the string <code>string</code>.</p>
+					<h5>string:<strong>split</strong><span style="font-style: italic"> string separator</span></h5>
+					<p>Splits the string at the specified separator, and returns a table.</p>
+					<h5>string:<strong>find</strong><span style="font-style: italic"> string value</span></h5>
+					<p>Searches the string for a specified value and returns the position of where it was found.</p>
+					<h5>string:<strong>sub</strong><span style="font-style: italic"> string start end</span></h5>
+					<p>Returns the substring of string that starts at <code>start</code> and continues until <code>end</code>.</p>
+					<h5>string:<strong>string:format</strong><span style="font-style: italic"> string object ...</span></h5>
+					<p>The Prolix format string is replaced by all '%' contained in the string of each argument.</p>
+<pre>$string:format "Hello, %!" "World"; # Expected string: "Hello, World!"
+$string:format "My name is % and I am % years old." "John" 21; # Expected string: "My name is John and I am 21 years old."
+$string:format "The symbol '\%' is %." "cool"; # Expected string: "The symbol '%' is cool."</pre>
+					<h5>string:<strong>unicode</strong><span style="font-style: italic"> code</span><span style="font-size: 75%"> (New in version 2.0.1)</span></h5>
+					<p>Used to convert ASCII code into a character.</p>
+					<h5>string:<strong>ordinal</strong><span style="font-style: italic"> character</span><span style="font-size: 75%"> (New in version 2.0.1)</span></h5>
+					<p>Used to convert a character into ASCII code.</p>
+					<h3 id="table"><a href="#table">table</a> - Table Manipulation</h3>
+					<p>This library, encapsulated within the <code>$table</code> object (or table class), furnishes a comprehensive suite of generic functions meticulously designed for the manipulation of tables. Within the expansive repertoire of functionalities it offers, users can seamlessly engage in diverse operations aimed at enhancing the versatility and efficiency of table-based data management.</p>
+					<h5>table:<strong>create</strong><span style="font-style: italic"></span><span style="font-size: 75%"></span></h5>
+					<p>Results a new table populated with many instances of the specified value.</p>
+					<h5>table:<strong>set</strong><span style="font-style: italic"> table index value</span><span style="font-size: 75%"></span></h5>
+					<p>Create a new entry for the provided table at specified index with specified value.</p>
+					<h5>table:<strong>get</strong><span style="font-style: italic"> table index</span><span style="font-size: 75%"></span></h5>
+					<p>Get a entry value from the provided table at specified index.</p>
+					<h5>table:<strong>remove</strong><span style="font-style: italic"> table index</span><span style="font-size: 75%"></span></h5>
+					<p>Remove a entry from the provided table at specified index.</p>
+					<h5>table:<strong>push</strong><span style="font-style: italic"> table value</span><span style="font-size: 75%"></span></h5>
+					<p>Add a new entry from the provided table at index is the size of the provided table with specified value.</p>
+					<h5>table:<strong>combine</strong><span style="font-style: italic"> tableA tableB</span><span style="font-size: 75%"></span></h5>
+					<p>Combine two provided tables into one table.</p>
+					<h5>table:<strong>find</strong><span style="font-style: italic"> table value</span><span style="font-size: 75%"></span></h5>
+					<p>Find the entry index from entry value and results in attribute result.</p>
+					<h5>table:<strong>length</strong><span style="font-style: italic"> table</span><span style="font-size: 75%"> (Deprecated in version 2.0.1)</span></h5>
+					<p>Results the length of the provided table.</p>
+					<h5>table:<strong>clear</strong><span style="font-style: italic"> table</span><span style="font-size: 75%"></span></h5>
+					<p>Clear all entry in the provided table.</p>
+					<h5>table:<strong>foreach</strong><span style="font-style: italic"> table</span><span style="font-size: 75%"></span></h5>
+					<p>Execute group for each entry and it is store key and value in attribute <code>key</code> and <code>value</code>.</p>
+<pre>$table:create;
+$table:set $table:result 0 "Hi";
+$table:set $table:result 1 "Yo";
+$table:set $table:result 2 "Sup";
+$table:set $table:result 3 "Hello";
+$table:foreach $table:result {
+    $io:write $table:key :write ' ' :write $table:value :write '\n';
+}
+
+# Expected output:
+# 0 Hi
+# 1 Yo
+# 2 Sup
+# 3 Hello</pre>
+					<h3 id="math"><a href="#math">math</a> - Mathematical Functions</h3>
+					<p>Within the confines of this library, an expansive repertoire of fundamental mathematical functions is thoughtfully curated to cater to a diverse array of numerical operations. The mathematical functionalities are encapsulated within the library's structure, providing users with a comprehensive suite of both mathematical and operator functions. Notably, functions annotated as "integer/float" exhibit a dynamic behavior, yielding integer results when supplied with integer arguments and seamlessly transitioning to float results for float or mixed arguments, thereby ensuring adaptability across different numerical domains.</p>
+					<h5>math:<strong>abs</strong><span style="font-style: italic"> x</span><span style="font-size: 75%"></span></h5>
+<p>Results the absolute value of x. (integer/float)</p>
+<h5>math:<strong>acos</strong><span style="font-style: italic"> x</span><span style="font-size: 75%"></span></h5>
+<p>Results the arc cosine of x (in radians).</p>
+<h5>math:<strong>add</strong><span style="font-style: italic"> x y</span><span style="font-size: 75%"></span></h5>
+<p>Results the value x + y.</p>
+<h5>math:<strong>asin</strong><span style="font-style: italic"> x</span><span style="font-size: 75%"></span></h5>
+<p>Results the arc sine of x (in radians).</p>
+<h5>math:<strong>atan</strong><span style="font-style: italic"> x</span><span style="font-size: 75%"></span></h5>
+<p>Results the arc tangent of y/1 (in radians).</p>
+<h5>math:<strong>ceil</strong><span style="font-style: italic"> x</span><span style="font-size: 75%"></span></h5>
+<p>Results the smallest integral value larger than or equal to x.</p>
+<h5>math:<strong>cos</strong><span style="font-style: italic"> x</span><span style="font-size: 75%"></span></h5>
+<p>Results the cosine of x (assumed to be in radians).</p>
+<h5>math:<strong>cosh</strong><span style="font-style: italic"> x</span><span style="font-size: 75%"></span></h5>
+<p>Results the hyperbolic cosine of x.</p>
+<h5>math:<strong>deg</strong><span style="font-style: italic"> x</span><span style="font-size: 75%"></span></h5>
+<p>Converts the angle x from radians to degrees.</p>
+<h5>math:<strong>div</strong><span style="font-style: italic"> x y</span><span style="font-size: 75%"></span></h5>
+<p>Results the value x / y.</p>
+<h5>math:<strong>eq</strong><span style="font-style: italic"> x y</span><span style="font-size: 75%"></span></h5>
+<p>Results the value x == y.</p>
+<h5>math:<strong>exp</strong><span style="font-style: italic"> x</span><span style="font-size: 75%"></span></h5>
+<p>Results the value e^x (where e is the base of natural logarithms).</p>
+<h5>math:<strong>factorial</strong><span style="font-style: italic"> x</span><span style="font-size: 75%"></span></h5>
+<p>Returns the factorial of x.</p>
+<h5>math:<strong>floor</strong><span style="font-style: italic"> x</span><span style="font-size: 75%"></span></h5>
+<p>Results the largest integral value smaller than or equal to x.</p>
+<h5>math:<strong>frexp</strong><span style="font-style: italic"> x</span><span style="font-size: 75%"></span></h5>
+<p>Returns the mantissa and the exponent, of x.</p>
+<h5>math:<strong>fmod</strong><span style="font-style: italic"> x y</span><span style="font-size: 75%"></span></h5>
+<p>Result the remainder of the division of x by y that rounds the quotient towards zero. (integer/float).</p>
+<h5>math:<strong>ge</strong><span style="font-style: italic"> x y</span><span style="font-size: 75%"></span></h5>
+<p>Results the value x >= y.</p>
+<h5>math:<strong>gt</strong><span style="font-style: italic"> x y</span><span style="font-size: 75%"></span></h5>
+<p>Results the value x > y.</p>
+<h5>math:<strong>le</strong><span style="font-style: italic"> x y</span><span style="font-size: 75%"></span></h5>
+<p>Results the value x <= y.</p>
+<h5>math:<strong>log</strong><span style="font-style: italic"> x</span><span style="font-size: 75%"></span></h5>
+<p>Result the logarithm of x in the given base. The default for base is e (so that the function result the natural logarithm of x).</p>
+<h5>math:<strong>log10</strong><span style="font-style: italic"> x</span><span style="font-size: 75%"></span></h5>
+<p>Returns the base-10 logarithm of x.</p>
+<h5>math:<strong>lt</strong><span style="font-style: italic"> x y</span><span style="font-size: 75%"></span></h5>
+<p>Results the value x < y.</p>
+<h5>math:<strong>mod</strong><span style="font-style: italic"> x y</span><span style="font-size: 75%"></span></h5>
+<p>Result the value x % y.</p>
+<h5>math:<strong>modf</strong><span style="font-style: italic"> x</span><span style="font-size: 75%"></span></h5>
+<p>Result the integral part of x and the fractional part of x. Its second result is always a float.</p>
+<h5>math:<strong>mul</strong><span style="font-style: italic"> x y</span><span style="font-size: 75%"></span></h5>
+<p>Results the value x * y.</p>
+<h5>math:<strong>ne</strong><span style="font-style: italic"> x y</span><span style="font-size: 75%"></span></h5>
+<p>Results the value x != y.</p>
+<h5>math:<strong>neg</strong><span style="font-style: italic"> x</span><span style="font-size: 75%"></span></h5>
+<p>Results the value -x.</p>
+<h5>math:<strong>not</strong><span style="font-style: italic"> x</span><span style="font-size: 75%"></span></h5>
+<p>Results the value !x.</p>
+<h5>math:<strong>pow</strong><span style="font-style: italic"> x y</span><span style="font-size: 75%"></span></h5>
+<p>Results the value x^y.</p>
+<h5>math:<strong>rad</strong><span style="font-style: italic"> x</span><span style="font-size: 75%"></span></h5>
+<p>Converts the angle x from degrees to radians.</p>
+<h5>math:<strong>random</strong><span style="font-style: italic"> x y</span><span style="font-size: 75%"></span></h5>
+<p>Result inclusive random integer of between x and y.</p>
+<h5>math:<strong>randomseed</strong><span style="font-style: italic"> x</span><span style="font-size: 75%"></span></h5>
+<p>Sets x as the "seed" for the random number generator: equal seeds produce equal sequences of numbers.</p>
+<h5>math:<strong>round</strong><span style="font-style: italic"> x</span><span style="font-size: 75%"></span></h5>
+<p>Results the rounded value of x.</p>
+<h5>math:<strong>sin</strong><span style="font-style: italic"> x</span><span style="font-size: 75%"></span></h5>
+<p>Results the sine of x (assumed to be in radians).</p>
+<h5>math:<strong>sinh</strong><span style="font-style: italic"> x</span><span style="font-size: 75%"></span></h5>
+<p>Results the hyperbolic sine of x.</p>
+<h5>math:<strong>sqrt</strong><span style="font-style: italic"> x</span><span style="font-size: 75%"></span></h5>
+<p>Results the square root of x.</p>
+<h5>math:<strong>sub</strong><span style="font-style: italic"> x y</span><span style="font-size: 75%"></span></h5>
+<p>Results the value x - y.</p>
+<h5>math:<strong>tan</strong><span style="font-style: italic"> x</span><span style="font-size: 75%"></span></h5>
+<p>Results the tangent of x (assumed to be in radians).</p>
+<h5>math:<strong>tanh</strong><span style="font-style: italic"> x</span><span style="font-size: 75%"></span></h5>
+<p>Results the hyperbolic tangent of x.</p>
+<h3 id="io"><a href="#io">io</a> - Input and Output Facilities</h3>
+<p>The Prolix I/O library simplifies data input/output and file tasks. It streamlines user interaction by providing easy functions for reading input, displaying output, and managing files. Whether handling standard input/output or file operations, this library offers a concise set of features, including error detection, making it a handy tool for efficient and user-friendly Prolix applications.</p>
+<h5>io:<strong>write</strong><span style="font-style: italic"> object</span><span style="font-size: 75%"></span></h5>
+<p>Used to write data to the working file or if there is no working file, write data to the console.</p>
+<h5>io:<strong>append</strong><span style="font-style: italic"> object</span><span style="font-size: 75%"></span></h5>
+<p>Similar to function <code>io:write</code> but only has a different use: if there is a working file, it will add data instead of rewriting all the data.</p>
+<h5>io:<strong>read</strong><span style="font-style: italic"> [mode]</span><span style="font-size: 75%"></span></h5>
+<p>Reading the file and the result of the file data or not will read the user input in the console but there are many different modes.</p>
+<p>Reading user input with different modes:</p>
+<div class="table-responsive">
+<table class="table table-striped table-hover">
+	<thead>
+		<tr>
+			<th>User-Input Mode</th>
+			<th>Description</th>
+			<th>Log</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th scope="row"><code>%s</code></th>
+			<td>Read full line of user input</td>
+			<td>Deprecated in version 2.1.0</td>
+		</tr>
+		<tr>
+			<th scope="row"><code>%l</code></th>
+			<td>Read full line of user input</td>
+			<td>New in version 2.1.0</td>
+		</tr>
+		<tr>
+			<th scope="row"><code>%n</code></th>
+			<td>Read a number of user input</td>
+			<td></td>
+		</tr>
+		<tr>
+			<th scope="row"><code>%c</code></th>
+			<td>Read a character of user input</td>
+			<td>Deprecated in version 2.1.0</td>
+		</tr>
+		<tr>
+			<th scope="row"><code>%c</code></th>
+			<td>Read the next keypress of user input</td>
+			<td>New in version 2.1.0</td>
+		</tr>
+		<tr>
+			<th scope="row">integer</th>
+			<td>Read provided characters amount of user input</td>
+			<td></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+<h5>io:<strong>open</strong><span style="font-style: italic"> source</span><span style="font-size: 75%"></span></h5>
+<p>Open the file via the provided file path and after being provided it will be converted into a file object and saved into the <code>__cwf__</code> attribute and if there is an existing working file then will report an error.</p>
+<h5>io:<strong>close</strong><span style="font-style: italic"></span><span style="font-size: 75%"></span></h5>
+<p>Close the current working file and if there is no current working file, an error message will be reported.</p>
+<h5>io:<strong>popen</strong><span style="font-style: italic"> arguments</span><span style="font-size: 75%"> (New in version 2.1.0)</span></h5>
+<p>This function is system dependent and is not available on all platforms.</p>
+<p>Starts the program (provided path at start of the arguments) with provided arguments in a separated process and store a file handle (<strong>userdata</strong>) in <code>__cwf__</code> attribute that you can use to read data from this program.</p>
+<h3 id="os"><a href="#os">os</a> - Operating System Facilities</h3>
+<p>This library is implemented through object <code>$os</code> (or <strong>os</strong> class).</p>
+<h5>os:<strong>name</strong><span style="font-style: italic"></span><span style="font-size: 75%"> (Constant) (New in version 2.1.0)</span></h5>
+<p>The name of the operating system dependent module imported. The following names have currently been registered: <code>'posix'</code>, <code>'nt'</code>.</p>
+<h5>os:<strong>chdir</strong><span style="font-style: italic"> source</span><span style="font-size: 75%"> (New in version 2.1.0)</span></h5>
+<p>Change the current working directory to specified path.</p>
+<h5>os:<strong>date</strong><span style="font-style: italic"> format</span><span style="font-size: 75%"> (New in version 2.1.0)</span></h5>
+<p>Results a string containing date and time, formatted according to the given string format. The following specifiers are supported:</p>
+<div class="table-responsive">
+<table class="table table-striped table-hover">
+	<thead>
+		<tr>
+			<th>Specifier</th>
+			<th>Meaning</th>
+			<th>Example</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th scope="row"><code>%s</code></th>
+			<td>Second</td>
+			<td>10</td>
+		</tr>
+		<tr>
+			<th scope="row"><code>%m</code></th>
+			<td>Minute</td>
+			<td>20</td>
+		</tr>
+		<tr>
+			<th scope="row"><code>%h</code></th>
+			<td>Hour</td>
+			<td>6</td>
+		</tr>
+		<tr>
+			<th scope="row"><code>%d</code></th>
+			<td>Day of the month</td>
+			<td>24</td>
+		</tr>
+		<tr>
+			<th scope="row"><code>%M</code></th>
+			<td>Month</td>
+			<td>11</td>
+		</tr>
+		<tr>
+			<th scope="row"><code>%y</code></th>
+			<td>Year</td>
+			<td>2023</td>
+		</tr>
+	</tbody>
+</table>
+<p>* These values can vary depending on the current locale.</p>
+<h5>os:<strong>exec</strong><span style="font-style: italic"> command</span><span style="font-size: 75%"> (New in version 2.1.0)</span></h5>
+<p>This function is equivalent to the ISO C function <code>system</code>. It passes command to be executed by an operating system shell.</p>
+<h5>os:<strong>exit</strong><span style="font-style: italic"></span><span style="font-size: 75%"> (New in version 2.1.0)</span></h5>
+<p>Calls the ISO C function exit to terminate the host program.</p>
+<h5>os:<strong>getcwd</strong><span style="font-style: italic"></span><span style="font-size: 75%"> (New in version 2.1.0)</span></h5>
+<p>Results the current working directory.</p>
+<h5>os:<strong>getenv</strong><span style="font-style: italic"> varname</span><span style="font-size: 75%"> (New in version 2.1.0)</span></h5>
+<p>Results the value of the process environment variable varname or fail if the variable is not defined.</p>
+<h5>os:<strong>listdir</strong><span style="font-style: italic"> [source]</span><span style="font-size: 75%"> (New in version 2.1.0)</span></h5>
+<p>Get the list (table) of all files and directories in the specified directory.</p>
+<h5>os:<strong>mkdir</strong><span style="font-style: italic"> name</span><span style="font-size: 75%"> (New in version 2.1.0)</span></h5>
+<p>Create a directory in Prolix or create a directory with Prolix named path.</p>
+<h5>os:<strong>remove</strong><span style="font-style: italic"> source</span><span style="font-size: 75%"> (New in version 2.1.0)</span></h5>
+<p>Deletes the file or directory with the given path.</p>
+<h5>os:<strong>rename</strong><span style="font-style: italic"> source newname</span><span style="font-size: 75%"> (New in version 2.1.0)</span></h5>
+<p>Renames the file or directory to the <code>newname</code>.</p>
+<h3 id="garbagecollect"><a href="#garbagecollect">garbagecollect</a> - Garbage Collection Facilities</h3>
+<p>An automatic memory management that uses garbage collection based on certain algorithms that is in-built in Prolix.</p>
+<p>Prolix uses the occasionally running garbage collector to collect dead objects when they are no longer accessible from the prolix program.</p>
+<p>All objects including objects, tables, groups, classes, strings, etc. must be managed automatically. Prolix uses a trace collector and incremental scanning that uses two numbers to control its garbage collection cycle, which is to pause the garbagemaker and multiply the step coefficient of the garbulk collector. These values are calculated in percentage terms and values of 100 are usually equal to 1 internally.</p>
+<h5>garbagecollect:<strong>enabled</strong><span style="font-style: italic"> value</span><span style="font-size: 75%"></span></h5>
+<p>This is an attribute and not really a function, but it is used to enable/disable automatic garbage collection.</p>
+<h5>garbagecollect:<strong>paused</strong><span style="font-style: italic"> value</span><span style="font-size: 75%"></span></h5>
+<p>Pause the garbage collector used to control the previous time that the trash collector needs to wait; it is called back by Prolix's automatic memory management feature.</p>
+<h5>garbagecollect:<strong>count</strong><span style="font-style: italic"></span><span style="font-size: 75%"></span></h5>
+<p>Result the current collection counts as a table of <code>count0, count1, count2</code>.</p>
+<h5>garbagecollect:<strong>pausecount</strong><span style="font-style: italic"></span><span style="font-size: 75%"></span></h5>
+<p>Result the number of objects in the permanent generation.</p>
+<h5>garbagecollect:<strong>collect</strong><span style="font-style: italic"></span><span style="font-size: 75%"></span></h5>
+<p>Collect and result amount of garbage collection.</p>
+<h5>garbagecollect:<strong>istracked</strong><span style="font-style: italic"> object</span><span style="font-size: 75%"></span></h5>
+<p>Result <code>1</code> if the object is currently tracked by the garbage collector, <code>0</code> otherwise.</p>
+<h3 id="cdll"><a href="#cdll">cdll</a> - C Dynamic Library Loader</h3>
+<p>A library used to extend Prolix in C through libraries from C and read C code files through dynamic link library files.</p>
+<h5>cdll:<strong>open</strong><span style="font-style: italic"> source</span><span style="font-size: 75%"></span></h5>
+<p>Used to read dynamic link library files and convert them into <code>cdll</code> objects and stored in the <code>__source__</code> attribute so that the <code>cdll:load</code> function can read and run functions from the C library.</p>
+<h5>cdll:<strong>load</strong><span style="font-style: italic"> function [argument ...]</span><span style="font-size: 75%"></span></h5>
+<p>When a <code>.dll</code> file (or <code>.so</code> file) is read and converted and saved to the <code>__source__</code> attribute, this function will read and run the function from the converted file with specified arguments.</p>
+
+</div><!-- /.content -->
+				</div>
+				<!-- end: documentation content -->
+
+			</div>
+		</div>
+	</div>
+</section>
+<!-- end: content -->
+
+<!-- footer -->
+<footer id="docs-footer">
+	<div class="container">
+		<div class="docs-footer-container">
+			<p>Copyright<i class="fa fa-copyright"></i>2023 - 2024. Prolix Official Site | Author: <a href="https://esolangs.org/wiki/User:Morlus" target="_blank" rel="noopener noreferrer">_morlus</a></p>
+		</div>
+	</div>
+</footer>
+<!-- end: footer -->
+
+<!-- JS files
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../assets/js/jquery.min.js?ver=1.12.4"></script>
+<script src="../assets/js/bootstrap.min.js?ver=3.4.1"></script>
+<script src="../assets/js/ie10-viewport-bug-workaround.js?ver=3.4.1"></script>
+<script src="../assets/plugins/prettyPhoto/js/jquery.prettyPhoto.js?ver=3.1.6"></script>
+<script src="../assets/js/prism.js?ver=1.29.0"></script>
+<script src="../assets/js/documentation.js?ver=1.0.0"></script>
+</body>
+</html>
